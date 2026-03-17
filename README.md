@@ -1,20 +1,77 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Feasability Analysis Slides
 
-# Run and deploy your AI Studio app
+A React + Vite presentation project for a feasibility analysis of an Anthropic-style startup in the Generative AI industry (with rival comparison against OpenAI and Google DeepMind).
 
-This contains everything you need to run your app locally.
+## Highlights
 
-View your app in AI Studio: https://ai.studio/apps/633a60dd-cd9d-4772-bf12-1ace187e0961
+- Slide-based interactive presentation (keyboard navigation + dots)
+- Updated market, competitor, and feasibility content
+- Animated first-slide `Anthropic` gradient title
+- Reusable branded logo component (`pxnz3r`)
+- Tailwind + Motion powered visual system
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- Motion (`motion/react`)
+- HLS.js
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js 20+ recommended
+- npm 10+ recommended
+
+### Install
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+App runs at: `http://localhost:3000`
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Type-check
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+src/
+  App.tsx
+  index.css
+  components/
+components/
+  GradientText.jsx
+  GradientText.css
+```
+
+## Contributing
+
+Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+
+## Security
+
+If you discover a security issue, please read [SECURITY.md](./SECURITY.md).
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE).

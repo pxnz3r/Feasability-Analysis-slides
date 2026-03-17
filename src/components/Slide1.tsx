@@ -2,6 +2,7 @@ import React from 'react';
 import { SlideWrapper } from './SlideWrapper';
 import { BlurReveal, SlideUpLine } from './AnimatedText';
 import { Logo } from './Logo';
+import GradientText from '../../components/GradientText';
 
 export const Slide1 = ({ isActive }: { isActive: boolean }) => {
   return (
@@ -33,7 +34,16 @@ export const Slide1 = ({ isActive }: { isActive: boolean }) => {
 
       <div className="flex-1 flex items-end px-[5%] pb-[8%]">
         <h1 className="text-white leading-[0.9] tracking-tight text-[clamp(48px,10vw,140px)]">
-          <SlideUpLine delay={0.3} duration={0.7}>Anthropic</SlideUpLine>
+          <SlideUpLine delay={0.3} duration={0.7}>
+            <GradientText
+              colors={['#d2d1cb', '#f2a35a', '#e8a354']}
+              animationSpeed={4.5}
+              showBorder={false}
+              className="custom-class"
+            >
+              Anthropic
+            </GradientText>
+          </SlideUpLine>
           <br />
           <SlideUpLine delay={0.4} duration={0.7}>Feasibility Analysis</SlideUpLine>
         </h1>
